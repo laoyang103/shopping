@@ -14,8 +14,7 @@
 
 	<bean id="transactionManager"
 		class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
-		<property name="dataSource" ref="shoppingDataSource
-		" />
+		<property name="dataSource" ref="shoppingDataSource" />
 	</bean>
 
 	<!-- 用户信息 -->
