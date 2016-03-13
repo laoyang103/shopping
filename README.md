@@ -1,4 +1,4 @@
-网上商城
+家用电器商城
 =========================
 
 #概述
@@ -21,7 +21,6 @@
     
 编译打包 :
 
-    cd shopping
     mkdir -p WebContent/WEB-INF/classes
     cp -r src/*.xml src/*.properties src/sqlmap/ WebContent/WEB-INF/classes/
     javac -encoding utf-8 -Djava.ext.dirs=./WebContent/WEB-INF/lib/:/opt/apache-tomcat-6.0.37/lib/  -d WebContent/WEB-INF/classes `find ./src/ -name *.java`
@@ -30,8 +29,7 @@
 
 运行项目 :
 
-    cd shopping
-    mv WebContent/shopping.war /opt/apache-tomcat-6.0.37/webapps
+    mv shopping.war /opt/apache-tomcat-6.0.37/webapps
     /opt/apache-tomcat-6.0.37/bin/startup.sh
 
 在浏览器中输入 http://127.0.0.1:8080/shopping  
